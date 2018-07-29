@@ -148,6 +148,7 @@
     <Image Include="app.ico" />
     <Image Include="ICON.bmp" />
     <Image Include="icon.ico" />
+    <Image Include="Pictures\MMIcon.ico" />
     <Image Include="Pictures\Splash.png" />
     <Image Include="MMIcon.ico" />
     <Image Include="Pictures\buttons\bmp\Abutton gray.bmp" />

@@ -5730,7 +5730,6 @@ namespace MagMaestro {
 		GUID InterfaceClassGuidLegacy = { 0x761ED34A, 0xCCFA, 0x416B, 0x94, 0xBB, 0x33, 0x48, 0x6D, 0xB1, 0xF5, 0xD5 };
 		GUID InterfaceClassGuid = { 0x7DDCC5E8, 0xFADE, 0x4D11, 0x96, 0x90, 0x9F, 0x86, 0xAA, 0xC6, 0x1D, 0xCA };
 
-		HDEVINFO DeviceInfoTableLegacy = INVALID_HANDLE_VALUE;
 		HDEVINFO DeviceInfoTable = INVALID_HANDLE_VALUE;
 		PSP_DEVICE_INTERFACE_DATA InterfaceDataStructure = new SP_DEVICE_INTERFACE_DATA;
 		PSP_DEVICE_INTERFACE_DETAIL_DATA DetailedInterfaceDataStructure = new SP_DEVICE_INTERFACE_DETAIL_DATA;
@@ -5765,21 +5764,25 @@ namespace MagMaestro {
 					return;
 				}
 			}
-			else if ((SetupDiEnumDeviceInterfacesUM(DeviceInfoTable, NULL, &InterfaceClassGuidLegacy, InterfaceIndex, InterfaceDataStructure)))
+			else 
 			{
-				isLegacy = true;
-				ErrorStatus = GetLastError();
-				if (ERROR_NO_MORE_ITEMS == ErrorStatus)	//Did we reach the end of the list of matching devices in the DeviceInfoTable?
-				{	//Cound not find the device.  Must not have been attached.
+				DeviceInfoTable = SetupDiGetClassDevsUM(&InterfaceClassGuidLegacy, NULL, NULL, DIGCF_PRESENT | DIGCF_DEVICEINTERFACE);
+				if (SetupDiEnumDeviceInterfacesUM(DeviceInfoTable, NULL, &InterfaceClassGuidLegacy, InterfaceIndex, InterfaceDataStructure))
+				{
+					isLegacy = true;
+					ErrorStatus = GetLastError();
+					if (ERROR_NO_MORE_ITEMS == ErrorStatus)	//Did we reach the end of the list of matching devices in the DeviceInfoTable?
+					{	//Cound not find the device.  Must not have been attached.
+						SetupDiDestroyDeviceInfoListUM(DeviceInfoTable);	//Clean up the old structure we no longer need.
+						return;
+					}
+				}
+				else	//Else some other kind of unknown error ocurred...
+				{
+					ErrorStatus = GetLastError();
 					SetupDiDestroyDeviceInfoListUM(DeviceInfoTable);	//Clean up the old structure we no longer need.
 					return;
 				}
-			}
-			else	//Else some other kind of unknown error ocurred...
-			{
-				ErrorStatus = GetLastError();
-				SetupDiDestroyDeviceInfoListUM(DeviceInfoTable);	//Clean up the old structure we no longer need.
-				return;
 			}
 
 
