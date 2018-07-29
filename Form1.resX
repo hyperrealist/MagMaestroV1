@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="voltNeedLine.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>431, 311, 0, 19</value>
+  </data>
+  <data name="voltNeedLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 311</value>
+  </data>
+  <data name="voltNeedLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 19</value>
+  </data>
+  <data name="lineShape52.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>82, 465, 725, 0</value>
+  </data>
+  <data name="lineShape52.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 465</value>
+  </data>
+  <data name="lineShape52.Size" type="System.Drawing.Size, System.Drawing">
+    <value>725, 0</value>
+  </data>
+  <data name="lineShape51.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>12, 430, 0, 70</value>
+  </data>
+  <data name="lineShape51.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 430</value>
+  </data>
+  <data name="lineShape51.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="lineShape50.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>82, 430, 0, 70</value>
+  </data>
+  <data name="lineShape50.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 430</value>
+  </data>
+  <data name="lineShape50.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="lineShape49.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>807, 430, 0, 70</value>
+  </data>
+  <data name="lineShape49.Location" type="System.Drawing.Point, System.Drawing">
+    <value>807, 430</value>
+  </data>
+  <data name="lineShape49.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="lineShape48.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>12, 430, 795, 0</value>
+  </data>
+  <data name="lineShape48.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 430</value>
+  </data>
+  <data name="lineShape48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>795, 0</value>
+  </data>
+  <data name="lineShape47.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>12, 500, 795, 0</value>
+  </data>
+  <data name="lineShape47.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 500</value>
+  </data>
+  <data name="lineShape47.Size" type="System.Drawing.Size, System.Drawing">
+    <value>795, 0</value>
+  </data>
+  <data name="lineShape46.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>82, 340, 0, 70</value>
+  </data>
+  <data name="lineShape46.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 340</value>
+  </data>
+  <data name="lineShape46.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="lineShape45.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>12, 340, 0, 70</value>
+  </data>
+  <data name="lineShape45.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 340</value>
+  </data>
+  <data name="lineShape45.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="lineShape44.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>807, 340, 0, 70</value>
+  </data>
+  <data name="lineShape44.Location" type="System.Drawing.Point, System.Drawing">
+    <value>807, 340</value>
+  </data>
+  <data name="lineShape44.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 70</value>
+  </data>
+  <data name="lineShape43.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>12, 410, 795, 0</value>
+  </data>
+  <data name="lineShape43.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 410</value>
+  </data>
+  <data name="lineShape43.Size" type="System.Drawing.Size, System.Drawing">
+    <value>795, 0</value>
+  </data>
+  <data name="lineShape42.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>12, 340, 795, 0</value>
+  </data>
+  <data name="lineShape42.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 340</value>
+  </data>
+  <data name="lineShape42.Size" type="System.Drawing.Size, System.Drawing">
+    <value>795, 0</value>
+  </data>
+  <data name="lineShape13.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>751, 168, 9, 0</value>
+  </data>
+  <data name="lineShape13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>751, 168</value>
+  </data>
+  <data name="lineShape13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>9, 0</value>
+  </data>
+  <data name="lineShape14.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>770, 168, 9, 0</value>
+  </data>
+  <data name="lineShape14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>770, 168</value>
+  </data>
+  <data name="lineShape14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>9, 0</value>
+  </data>
+  <data name="lineShape15.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>789, 168, 9, 0</value>
+  </data>
+  <data name="lineShape15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>789, 168</value>
+  </data>
+  <data name="lineShape15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>9, 0</value>
+  </data>
+  <data name="lineShape12.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>706, 0, 0, 162</value>
+  </data>
+  <data name="lineShape12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>706, 0</value>
+  </data>
+  <data name="lineShape12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 162</value>
+  </data>
+  <data name="lineShape11.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>281, 0, 0, 162</value>
+  </data>
+  <data name="lineShape11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>281, 0</value>
+  </data>
+  <data name="lineShape11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 162</value>
+  </data>
+  <data name="lineShape10.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>0, 0, 706, 0</value>
+  </data>
+  <data name="lineShape10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lineShape10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 0</value>
+  </data>
+  <data name="lineShape9.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>590, 0, 0, 162</value>
+  </data>
+  <data name="lineShape9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>590, 0</value>
+  </data>
+  <data name="lineShape9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 162</value>
+  </data>
+  <data name="lineShape8.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>0, 0, 0, 162</value>
+  </data>
+  <data name="lineShape8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lineShape8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 162</value>
+  </data>
+  <data name="lineShape7.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>433, 0, 0, 162</value>
+  </data>
+  <data name="lineShape7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, 0</value>
+  </data>
+  <data name="lineShape7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 162</value>
+  </data>
+  <data name="lineShape6.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>144, 0, 0, 162</value>
+  </data>
+  <data name="lineShape6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 0</value>
+  </data>
+  <data name="lineShape6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 162</value>
+  </data>
+  <data name="lineShape5.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>0, 64, 706, 0</value>
+  </data>
+  <data name="lineShape5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 64</value>
+  </data>
+  <data name="lineShape5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 0</value>
+  </data>
+  <data name="lineShape4.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>0, 162, 706, 0</value>
+  </data>
+  <data name="lineShape4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 162</value>
+  </data>
+  <data name="lineShape4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 0</value>
+  </data>
+  <data name="lineShape3.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>39, 0, 0, 162</value>
+  </data>
+  <data name="lineShape3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 0</value>
+  </data>
+  <data name="lineShape3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 162</value>
+  </data>
+  <data name="lineShape2.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>0, 129, 706, 0</value>
+  </data>
+  <data name="lineShape2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 129</value>
+  </data>
+  <data name="lineShape2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 0</value>
+  </data>
+  <data name="lineShape1.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>0, 97, 706, 0</value>
+  </data>
+  <data name="lineShape1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 97</value>
+  </data>
+  <data name="lineShape1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>706, 0</value>
+  </data>
+  <data name="ConstVectThetaB.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>385, 253, 50, 0</value>
+  </data>
+  <data name="ConstVectThetaB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 253</value>
+  </data>
+  <data name="ConstVectThetaB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="ConstVectThetaA.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>385, 246, 50, 0</value>
+  </data>
+  <data name="ConstVectThetaA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 246</value>
+  </data>
+  <data name="ConstVectThetaA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="ConstVectThetaMain.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>385, 239, 50, 0</value>
+  </data>
+  <data name="ConstVectThetaMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>385, 239</value>
+  </data>
+  <data name="ConstVectThetaMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape21.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>337, 132, 100, 0</value>
+  </data>
+  <data name="lineShape21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>337, 132</value>
+  </data>
+  <data name="lineShape21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="lineShape19.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>320, 0, 0, 264</value>
+  </data>
+  <data name="lineShape19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 0</value>
+  </data>
+  <data name="lineShape19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 264</value>
+  </data>
+  <data name="lineShape20.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>336, 32, 0, 200</value>
+  </data>
+  <data name="lineShape20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 32</value>
+  </data>
+  <data name="lineShape20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="ConstantVectB.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>645, 254, 50, 0</value>
+  </data>
+  <data name="ConstantVectB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>645, 254</value>
+  </data>
+  <data name="ConstantVectB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="ConstantVectA.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>645, 247, 50, 0</value>
+  </data>
+  <data name="ConstantVectA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>645, 247</value>
+  </data>
+  <data name="ConstantVectA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="ConstantVectMain.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>645, 240, 50, 0</value>
+  </data>
+  <data name="ConstantVectMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>645, 240</value>
+  </data>
+  <data name="ConstantVectMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape18.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>482, 132, 200, 0</value>
+  </data>
+  <data name="lineShape18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>482, 132</value>
+  </data>
+  <data name="lineShape18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lineShape17.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>582, 32, 0, 200</value>
+  </data>
+  <data name="lineShape17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>582, 32</value>
+  </data>
+  <data name="lineShape17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="lineShape16.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>450, 0, 0, 264</value>
+  </data>
+  <data name="lineShape16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>450, 0</value>
+  </data>
+  <data name="lineShape16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 264</value>
+  </data>
+  <data name="PrecVectThetaB.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>387, 248, 50, 0</value>
+  </data>
+  <data name="PrecVectThetaB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 248</value>
+  </data>
+  <data name="PrecVectThetaB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="PrecVectThetaA.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>387, 241, 50, 0</value>
+  </data>
+  <data name="PrecVectThetaA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 241</value>
+  </data>
+  <data name="PrecVectThetaA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="PrecVectThetaMain.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>387, 234, 50, 0</value>
+  </data>
+  <data name="PrecVectThetaMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 234</value>
+  </data>
+  <data name="PrecVectThetaMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape23.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>323, 3, 0, 257</value>
+  </data>
+  <data name="lineShape23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 3</value>
+  </data>
+  <data name="lineShape23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 257</value>
+  </data>
+  <data name="lineShape27.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>339, 35, 0, 200</value>
+  </data>
+  <data name="lineShape27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 35</value>
+  </data>
+  <data name="lineShape27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="lineShape26.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>340, 135, 100, 0</value>
+  </data>
+  <data name="lineShape26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 135</value>
+  </data>
+  <data name="lineShape26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="PrecVectMain.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>648, 233, 50, 0</value>
+  </data>
+  <data name="PrecVectMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>648, 233</value>
+  </data>
+  <data name="PrecVectMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape25.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>585, 35, 0, 200</value>
+  </data>
+  <data name="lineShape25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 35</value>
+  </data>
+  <data name="lineShape25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="lineShape24.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>485, 135, 200, 0</value>
+  </data>
+  <data name="lineShape24.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 135</value>
+  </data>
+  <data name="lineShape24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lineShape22.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>453, 3, 0, 257</value>
+  </data>
+  <data name="lineShape22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 3</value>
+  </data>
+  <data name="lineShape22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 257</value>
+  </data>
+  <data name="PrecVectB.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>648, 247, 50, 0</value>
+  </data>
+  <data name="PrecVectB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>648, 247</value>
+  </data>
+  <data name="PrecVectB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="PrecVectA.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>648, 240, 50, 0</value>
+  </data>
+  <data name="PrecVectA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>648, 240</value>
+  </data>
+  <data name="PrecVectA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape31.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>323, 3, 0, 257</value>
+  </data>
+  <data name="lineShape31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 3</value>
+  </data>
+  <data name="lineShape31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 257</value>
+  </data>
+  <data name="rollVectA.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>648, 240, 50, 0</value>
+  </data>
+  <data name="rollVectA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>648, 240</value>
+  </data>
+  <data name="rollVectA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="rollVectB.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>648, 247, 50, 0</value>
+  </data>
+  <data name="rollVectB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>648, 247</value>
+  </data>
+  <data name="rollVectB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape37.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>453, 3, 0, 257</value>
+  </data>
+  <data name="lineShape37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 3</value>
+  </data>
+  <data name="lineShape37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 257</value>
+  </data>
+  <data name="lineShape36.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>485, 135, 200, 0</value>
+  </data>
+  <data name="lineShape36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 135</value>
+  </data>
+  <data name="lineShape36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lineShape35.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>585, 35, 0, 200</value>
+  </data>
+  <data name="lineShape35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 35</value>
+  </data>
+  <data name="lineShape35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="rollVectMain.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>648, 233, 50, 0</value>
+  </data>
+  <data name="rollVectMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>648, 233</value>
+  </data>
+  <data name="rollVectMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape33.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>340, 135, 100, 0</value>
+  </data>
+  <data name="lineShape33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 135</value>
+  </data>
+  <data name="lineShape33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="lineShape32.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>339, 35, 0, 200</value>
+  </data>
+  <data name="lineShape32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 35</value>
+  </data>
+  <data name="lineShape32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="rollVectThetaMain.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>387, 234, 50, 0</value>
+  </data>
+  <data name="rollVectThetaMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 234</value>
+  </data>
+  <data name="rollVectThetaMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="rollVectThetaA.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>387, 241, 50, 0</value>
+  </data>
+  <data name="rollVectThetaA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 241</value>
+  </data>
+  <data name="rollVectThetaA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="rollVectThetaB.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>387, 248, 50, 0</value>
+  </data>
+  <data name="rollVectThetaB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>387, 248</value>
+  </data>
+  <data name="rollVectThetaB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape28.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>336, 4, 0, 257</value>
+  </data>
+  <data name="lineShape28.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 4</value>
+  </data>
+  <data name="lineShape28.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 257</value>
+  </data>
+  <data name="lineShape29.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>356, 3, 0, 257</value>
+  </data>
+  <data name="lineShape29.Location" type="System.Drawing.Point, System.Drawing">
+    <value>356, 3</value>
+  </data>
+  <data name="lineShape29.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 257</value>
+  </data>
+  <data name="xboxVectB.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>644, 246, 50, 0</value>
+  </data>
+  <data name="xboxVectB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>644, 246</value>
+  </data>
+  <data name="xboxVectB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="xboxVectA.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>644, 239, 50, 0</value>
+  </data>
+  <data name="xboxVectA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>644, 239</value>
+  </data>
+  <data name="xboxVectA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="xboxVectMain.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>644, 232, 50, 0</value>
+  </data>
+  <data name="xboxVectMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>644, 232</value>
+  </data>
+  <data name="xboxVectMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="xboxVectThetaB.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>383, 247, 50, 0</value>
+  </data>
+  <data name="xboxVectThetaB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 247</value>
+  </data>
+  <data name="xboxVectThetaB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="xboxVectThetaA.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>383, 240, 50, 0</value>
+  </data>
+  <data name="xboxVectThetaA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 240</value>
+  </data>
+  <data name="xboxVectThetaA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="xboxVectThetaMain.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>383, 233, 50, 0</value>
+  </data>
+  <data name="xboxVectThetaMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>383, 233</value>
+  </data>
+  <data name="xboxVectThetaMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 0</value>
+  </data>
+  <data name="lineShape41.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>339, 35, 0, 200</value>
+  </data>
+  <data name="lineShape41.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 35</value>
+  </data>
+  <data name="lineShape41.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="lineShape40.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>340, 135, 100, 0</value>
+  </data>
+  <data name="lineShape40.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 135</value>
+  </data>
+  <data name="lineShape40.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 0</value>
+  </data>
+  <data name="lineShape39.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>585, 35, 0, 200</value>
+  </data>
+  <data name="lineShape39.Location" type="System.Drawing.Point, System.Drawing">
+    <value>585, 35</value>
+  </data>
+  <data name="lineShape39.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 200</value>
+  </data>
+  <data name="lineShape38.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>485, 135, 200, 0</value>
+  </data>
+  <data name="lineShape38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>485, 135</value>
+  </data>
+  <data name="lineShape38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 0</value>
+  </data>
+  <data name="lineShape30.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>323, 4, 0, 257</value>
+  </data>
+  <data name="lineShape30.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 4</value>
+  </data>
+  <data name="lineShape30.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 257</value>
+  </data>
+  <data name="lineShape34.Bounds" type="System.Drawing.Rectangle, System.Drawing">
+    <value>453, 3, 0, 257</value>
+  </data>
+  <data name="lineShape34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 3</value>
+  </data>
+  <data name="lineShape34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 257</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Action.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Duration.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Angle.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Revolutions.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CCW.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Inplane.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Outplane.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Frequency.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Direction.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="saveLogFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="saveMacroFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>167, 17</value>
+  </data>
+  <data name="loadMacroFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>331, 17</value>
+  </data>
+  <data name="saveConfigFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>495, 17</value>
+  </data>
+  <data name="loadConfigFileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>660, 17</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Abutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Abutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Abutton gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Abutton gray.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Backbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Backbutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Bbutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Bbutton gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Bbutton gray.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="beep-07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Sounds\beep-07.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="confirmBeep" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Sounds\confirmBeep.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ddown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Ddown.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Dleft.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dpad" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Dpad.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Dright.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Dup.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LBbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\LBbutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LSbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\LSbutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\LT.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MMIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\MMIcon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Not Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\Status light\Not Ready.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RBbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\RBbutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ready" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\Status light\Ready.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RSbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\RSbutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\RT.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\Splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Startbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Startbutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xbox360logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\logo\xbox360logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="xbox360logo gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\logo\xbox360logo gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xbutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Xbutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xbutton gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Xbutton gray.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ybutton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Ybutton.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ybutton gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\buttons\bmp\Ybutton gray.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
