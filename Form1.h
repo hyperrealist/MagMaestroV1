@@ -98,7 +98,16 @@ namespace MagMaestro {
 		PUCHAR Buffer,
 		ULONG BufferLength,
 		PULONG LengthTransferred,
-		LPOVERLAPPED Overlapped);
+		LPOVERLAPPED Overlapped);	
+	
+	[DllImport("winusb.dll", CharSet = CharSet::Seeifdef, EntryPoint = "WinUsb_SetPipePolicy", CallingConvention = CallingConvention::Winapi)]
+	extern "C" BOOL WinUsb_SetPipePolicy(
+		WINUSB_INTERFACE_HANDLE InterfaceHandle,
+		UCHAR                   PipeID,
+		ULONG                   PolicyType,
+		ULONG                   ValueLength,
+		PVOID                   Value
+	);
 
 	//WinUsb_ReadPipe() is the basic function used to read data from the USB device (polls for and obtains data from
 	//IN endpoints on the device)
@@ -5848,17 +5857,20 @@ namespace MagMaestro {
 				if (LodestoneHandle == INVALID_HANDLE_VALUE)
 					LodestoneHandle = CreateFile((DetailedInterfaceDataStructure->DevicePath), GENERIC_READ | GENERIC_WRITE, FILE_SHARE_READ | FILE_SHARE_WRITE, NULL, OPEN_EXISTING, FILE_FLAG_OVERLAPPED, 0);
 
-				//ErrorStatus = GetLastError();
-				//if (ErrorStatus == ERROR_SUCCESS)
-				//{
-					//Now get the WinUSB interface handle by calling WinUsb_Initialize() and providing the device handle.
 				BoolStatus = WinUsb_Initialize(LodestoneHandle, &LodestoneInterfaceHandle);
-				if (BoolStatus == TRUE)
+				if (BoolStatus == TRUE) //Successfully Connected
 				{
-					//If gets here, the "MyWinUSBInterfaceHandle" was initialized successfully.
-					//May begin using the MyWinUSBInterfaceHandle handle in WinUsb_WritePipe() and
-					//WinUsb_ReadPipe() function calls now.  Those are the functions for writing/reading to
-					//the USB device's endpoints.
+					bool flag = false;
+					ULONG timeout = 100; // ms
+					BOOL VALUE = FALSE;
+					BOOL VALUE2 = TRUE;
+					flag = WinUsb_SetPipePolicy(LodestoneInterfaceHandle, 0x84, IGNORE_SHORT_PACKETS, sizeof(BOOL), &VALUE2);
+					if (!flag) throw;
+					WinUsb_SetPipePolicy(LodestoneInterfaceHandle, 0x84, AUTO_FLUSH, sizeof(BOOL), &VALUE2);
+					if (!flag) throw;
+					WinUsb_SetPipePolicy(LodestoneInterfaceHandle, 0x84, AUTO_CLEAR_STALL, sizeof(BOOL), &VALUE2);
+					WinUsb_SetPipePolicy(LodestoneInterfaceHandle, 0x84, PIPE_TRANSFER_TIMEOUT, sizeof(ULONG), &timeout);
+					if (!flag) throw;
 					isConnected = true;
 					tabControl1->Enabled = true;
 					//progressBar1->Style = System::Windows::Forms::ProgressBarStyle::Continuous;
@@ -5890,7 +5902,6 @@ namespace MagMaestro {
 					voltNeedLine->Visible = true;
 					splashLogo->Visible = false;
 				}
-				//}
 
 				SetupDiDestroyDeviceInfoListUM(DeviceInfoTable);	//Clean up the old structure we no longer need.
 				while (mainLoopFlag)
@@ -6059,10 +6070,11 @@ namespace MagMaestro {
 
 		unsigned char controlMessage = 2;
 
-		XferSuccess1 = WinUsb_WritePipe(LodestoneInterfaceHandle, 0x03, &controlMessage, 1, &BytesWritten1, NULL);
-		XferSuccess2 = WinUsb_WritePipe(LodestoneInterfaceHandle, 0x05, &OutputPacketBuffer[0], 56, &BytesWritten2, NULL);
-		XferSuccess1 = WinUsb_WritePipe(LodestoneInterfaceHandle, 0x03, &controlMessage, 1, &BytesWritten1, NULL);
-		XferSuccess2 = WinUsb_WritePipe(LodestoneInterfaceHandle, 0x05, &OutputPacketBuffer[0], 56, &BytesWritten2, NULL);
+		if(!WinUsb_WritePipe(LodestoneInterfaceHandle, 0x03, &controlMessage, 1, &BytesWritten1, NULL)) throw;
+		if(!WinUsb_WritePipe(LodestoneInterfaceHandle, 0x05, &OutputPacketBuffer[0], 56, &BytesWritten2, NULL)) throw;
+
+		//XferSuccess1 = WinUsb_WritePipe(LodestoneInterfaceHandle, 0x03, &controlMessage, 1, &BytesWritten1, NULL);
+		//XferSuccess2 = WinUsb_WritePipe(LodestoneInterfaceHandle, 0x05, &OutputPacketBuffer[0], 56, &BytesWritten2, NULL);
 		getConfig();
 	}
 	private: System::Void getConfig() {
@@ -8475,7 +8487,6 @@ namespace MagMaestro {
 		configSaveFlag = false;
 	}
 	private: System::Void loadConfig() {
-		// SCOPE: Setup Tab.
 		// DESCRIPTION: Loads a configuration from a file.
 		String^ file = loadConfigFileDialog->FileName;
 		BinaryReader^ br = gcnew BinaryReader(File::Open(file, FileMode::Open));
@@ -8495,7 +8506,6 @@ namespace MagMaestro {
 		textBoxOAY->Text = br->ReadString();
 		textBoxOAZ->Text = br->ReadString();
 		sendConfig();
-		//configNameBox->Text = file;
 		configLoadFlag = false;
 	}
 	private: System::Void saveConfigButton_Click(System::Object^  sender, System::EventArgs^  e) {
