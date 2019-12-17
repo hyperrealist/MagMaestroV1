@@ -842,7 +842,7 @@ namespace MagMaestro {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"MMIcon")));
+			//this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"MMIcon")));
 			this->Connect_btn = (gcnew System::Windows::Forms::Button());
 			this->splashLogo = (gcnew System::Windows::Forms::PictureBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
